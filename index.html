@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lataj — Luxury Fashion</title>
+  <meta name="description" content="Lataj — luxury fashion for those who require no introduction. Explore the collection: coats, dresses, blazers, trousers, knitwear and skirts." />
+  <meta name="theme-color" content="#1a0a2e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lataj — Luxury Fashion" />
+  <meta property="og:description" content="Dressed for those who require no introduction." />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Primary">
+    <div class="nav__logo">Lataj</div>
+    <ul class="nav__links">
+      <li><a href="#about">Story</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="nav__cart" id="cartToggle" type="button" aria-label="Open cart" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="nav__cart-count" id="cartCount" hidden>0</span>
+      </button>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="#about" class="mobile-link">Story</a></li>
+      <li><a href="#collection" class="mobile-link">Collection</a></li>
+      <li><a href="#lookbook" class="mobile-link">Lookbook</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-fade">Haute Couture — New Season</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line" id="heroLine1">Lataj</span>
+      </h1>
+      <p class="hero__tagline reveal-fade-delay">Dressed for those who require no introduction.</p>
+      <a href="#collection" class="btn btn--light hero__cta reveal-fade-delay2">Shop Now</a>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__inner container">
+      <div class="about__label reveal-up">Our Story</div>
+      <div class="about__layout">
+        <div class="about__visual reveal-up">
+          <div class="about__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80"
+              alt="Lataj editorial"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num">2019</span>
+            <span class="about__stat-text">Founded</span>
+          </div>
+        </div>
+        <div class="about__text reveal-up-delay">
+          <h2 class="about__heading">Luxury is not<br/><em>worn — it is felt.</em></h2>
+          <p class="about__body">
+            Lataj was born from a quiet conviction: that clothing should move with intention, speak without words, and endure beyond season. Each piece is a study in restraint — cut in rare textiles, finished by hand, conceived for those who understand the difference between fashion and dress.
+          </p>
+          <p class="about__body">
+            We work with a closed circle of ateliers across Milan and Marrakech, sourcing only materials that can carry a story. No excess. No compromise.
+          </p>
+          <a href="#collection" class="btn btn--outline">Explore the Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection" aria-labelledby="collectionTitle">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Collection 2025</div>
+        <h2 class="section-title" id="collectionTitle">Curated Pieces</h2>
+        <p class="section-sub">Every silhouette considered. Every detail intentional.</p>
+      </div>
+
+      <div class="shop" id="shop">
+        <div class="shop-toolbar">
+          <div class="shop-toolbar__row">
+            <label class="visually-hidden" for="shopSearch">Search products</label>
+            <input type="search" id="shopSearch" class="shop-input shop-search" placeholder="Search pieces…" autocomplete="off" />
+            <label class="visually-hidden" for="shopSort">Sort products</label>
+            <select id="shopSort" class="shop-input shop-sort">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A–Z</option>
+              <option value="name-desc">Name: Z–A</option>
+            </select>
+            <button type="button" class="shop-filter-toggle" id="shopFilterToggle" aria-expanded="false" aria-controls="shopFilters">Filters</button>
+          </div>
+          <div class="shop-filters" id="shopFilters">
+            <div class="shop-field" id="fieldCategory" hidden>
+              <label for="filterCategory">Category</label>
+              <select id="filterCategory" class="shop-input"><option value="">All</option></select>
+            </div>
+            <div class="shop-field" id="fieldSize" hidden>
+              <label for="filterSize">Size</label>
+              <select id="filterSize" class="shop-input"><option value="">All</option></select>
+            </div>
+            <div class="shop-field" id="fieldColour" hidden>
+              <label for="filterColour">Colour</label>
+              <select id="filterColour" class="shop-input"><option value="">All</option></select>
+            </div>
+            <div class="shop-field">
+              <span class="shop-field__label" id="priceLabel">Price (₦)</span>
+              <div class="shop-price" role="group" aria-labelledby="priceLabel">
+                <input type="number" id="priceMin" class="shop-input" min="0" inputmode="numeric" placeholder="Min" aria-label="Minimum price" />
+                <span aria-hidden="true">–</span>
+                <input type="number" id="priceMax" class="shop-input" min="0" inputmode="numeric" placeholder="Max" aria-label="Maximum price" />
+              </div>
+            </div>
+            <label class="shop-check" id="fieldStock" hidden><input type="checkbox" id="filterStock" /> In stock only</label>
+            <button type="button" class="shop-clear" id="shopClear">Clear filters</button>
+          </div>
+        </div>
+
+        <p class="shop-count" id="shopCount" role="status" aria-live="polite"></p>
+        <div class="product-grid" id="productGrid"></div>
+        <noscript><p class="shop-count">Please enable JavaScript to browse the collection.</p></noscript>
+        <div class="shop-empty" id="shopEmpty" hidden>
+          <p>No pieces match your search or filters.</p>
+          <button type="button" class="btn btn--outline" id="shopClear2">Clear filters</button>
+        </div>
+        <nav class="pagination" id="pagination" aria-label="Product pages" hidden></nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Lataj</span><span>·</span>
+      <span>New Season</span><span>·</span>
+      <span>Haute Couture</span><span>·</span>
+      <span>Elevated Essentials</span><span>·</span>
+      <span>Lataj</span><span>·</span>
+      <span>New Season</span><span>·</span>
+      <span>Haute Couture</span><span>·</span>
+      <span>Elevated Essentials</span><span>·</span>
+      <span>Lataj</span><span>·</span>
+      <span>New Season</span><span>·</span>
+      <span>Haute Couture</span><span>·</span>
+      <span>Elevated Essentials</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- LOOKBOOK -->
+  <section class="lookbook" id="lookbook">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Editorial</div>
+        <h2 class="section-title">The Lookbook</h2>
+        <p class="section-sub">Dressed with intent. Captured with precision.</p>
+      </div>
+
+      <div class="lookbook-grid">
+        <div class="lookbook-item lookbook-item--tall reveal-up">
+          <div class="lookbook-item__inner">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800&q=80" alt="Look 01" loading="lazy" />
+            <div class="lookbook-item__caption">
+              <span class="lookbook-item__num">01</span>
+              <p>The Drape</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lookbook-item reveal-up delay-1">
+          <div class="lookbook-item__inner">
+            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&q=80" alt="Look 02" loading="lazy" />
+            <div class="lookbook-item__caption">
+              <span class="lookbook-item__num">02</span>
+              <p>The Edge</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lookbook-item reveal-up delay-2">
+          <div class="lookbook-item__inner">
+            <img src="https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=800&q=80" alt="Look 03" loading="lazy" />
+            <div class="lookbook-item__caption">
+              <span class="lookbook-item__num">03</span>
+              <p>The Quiet</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lookbook-item lookbook-item--wide reveal-up delay-1">
+          <div class="lookbook-item__inner">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80" alt="Look 04" loading="lazy" />
+            <div class="lookbook-item__caption">
+              <span class="lookbook-item__num">04</span>
+              <p>The Statement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BREAK -->
+  <section class="quote-section reveal-up">
+    <div class="container">
+      <blockquote class="quote">
+        <p>"Elegance is not about being noticed,<br/><em>it is about being remembered."</em></p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__left reveal-up">
+          <div class="section-label">Get in Touch</div>
+          <h2 class="contact__heading">Let's start<br/><em>a conversation.</em></h2>
+          <p class="contact__body">For styling inquiries, bespoke orders, or wholesale partnerships — we'd love to hear from you. Every message is received personally.</p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <span class="contact__detail-label">Email</span>
+              <a href="mailto:hello@Lataj.com">hello@Lataj.com</a>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-label">WhatsApp</span>
+              <a href="https://wa.me/9138947809" target="_blank" rel="noopener noreferrer">Message Us Directly</a>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-label">Location</span>
+              <span>Lagos, Nigeria</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__right reveal-up-delay">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" name="subject">
+                <option value="" disabled selected>Select a topic</option>
+                <option value="Order Inquiry">Order Inquiry</option>
+                <option value="Bespoke Request">Bespoke Request</option>
+                <option value="Wholesale">Wholesale</option>
+                <option value="Styling Consultation">Styling Consultation</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us how we can assist you…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--submit">Send Message</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <p>Thank you. We'll be in touch shortly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <div class="footer__logo">Lataj</div>
+        <p class="footer__tagline">Dressed for those who require<br/>no introduction.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#lookbook">Lookbook</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>Lataj &copy; <span id="year"></span> — All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ORDER TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- QUICK VIEW -->
+  <div class="qv" id="quickView" role="dialog" aria-modal="true" aria-labelledby="qvTitle" aria-hidden="true">
+    <div class="qv__backdrop" data-close></div>
+    <div class="qv__panel">
+      <button type="button" class="qv__close" data-close aria-label="Close quick view">✕</button>
+      <div class="qv__content" id="qvContent"></div>
+    </div>
+  </div>
+
+  <!-- CART DRAWER -->
+  <div class="cart" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="cart__backdrop" data-close></div>
+    <aside class="cart__panel">
+      <header class="cart__head">
+        <h2 id="cartTitle">Your Cart</h2>
+        <button type="button" class="cart__close" data-close aria-label="Close cart">✕</button>
+      </header>
+      <div class="cart__body" id="cartBody"></div>
+      <footer class="cart__foot" id="cartFoot" hidden>
+        <div class="cart__total"><span>Total</span><strong id="cartTotal">₦0</strong></div>
+        <p class="cart__note">Checkout is completed on WhatsApp.</p>
+        <button type="button" class="btn btn--order" id="cartCheckout">Checkout on WhatsApp</button>
+        <button type="button" class="cart__clear" id="cartClear">Clear cart</button>
+      </footer>
+    </aside>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>
